@@ -1,5 +1,6 @@
 public class demo1 {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Area obj= new Area (length: 10, breath: 20);
+        
     }
 }
