@@ -1,5 +1,5 @@
 class A{
-    static  class B{
+    class B{
         void test(){
             System.out.println("This is a nested class example.");
         }
@@ -8,7 +8,7 @@ class A{
 public class nested {
     public static void main(String[] args) {
         A objA=new A();
-        A.B objB = new A.B();
+        A.B objB = objA.new B();
         objB.test();
     }
     
