@@ -1,5 +1,3 @@
-public class demo {
-    
     class A{
     // Method overloading - add two integers
     int add(int num1, int num2) {
@@ -24,7 +22,7 @@ public class demo {
     }
 }
 
-class B {
+class demo {
     public static void main(String args[]) {
         // Initialize variables
         int a = 1, b = 2, c = 3;
@@ -48,4 +46,37 @@ class B {
         // Output: 3 6 3.0
     }
 }
+
+class ADD {
+    int a, b;
+    
+    // Parameterized constructor
+    ADD(int a1, int b1) {
+        a = a1;
+        b = b1;
+    }
 }
+
+    
+    // class A {
+    //     int add(int num1, int num2) {
+    //         return num1 + num2;
+    //     }
+        
+    //     float add(float num1, float num2) {
+    //         return num1 + num2;
+    //     }
+        
+    //     double add(double num1, double num2) {
+    //         return num1 + num2;
+    //     }
+    // }
+
+    // class demo {
+    //     public static void main(String args[]) {
+    //         A obj = new A();
+    //         System.out.println("Sum of integers: " + obj.add(5, 10));
+    //         System.out.println("Sum of floats: " + obj.add(5.5f, 10.5f));
+    //         System.out.println("Sum of doubles: " + obj.add(5.55, 10.55));
+    //     }
+    // }
