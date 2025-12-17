@@ -31,7 +31,7 @@ class Bike extends Vehicle {
     double calculateSpeed() {
         return distance / time;
     }
-    double calculateVelocity() {
+    double calculateVelocity() { 
         return calculateSpeed() * gearRatio;
     }
 }
