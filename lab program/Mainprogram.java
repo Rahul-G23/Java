@@ -3,8 +3,7 @@ interface Resizable {
     void resizeHeight(int height);
 }
 class Rectangle implements Resizable {
-    int width;
-    int height;
+    int width,height;
     public Rectangle(int width, int height) {
         this.width = width;
         this.height = height;

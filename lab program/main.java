@@ -1,9 +1,7 @@
 import java.util.Scanner;
-
 class IntStack {
     private int[] arr = new int[10];
     private int top = -1;
-
     public void push(int value) {
         if (isFull()) {
             System.out.println("Stack Overflow. Cannot push " + value);
@@ -12,7 +10,6 @@ class IntStack {
             System.out.println("Pushed: " + value);
         }
     }
-
     public void pop() {
         if (isEmpty()) {
             System.out.println("Stack Underflow. Cannot pop.");
@@ -20,7 +17,6 @@ class IntStack {
             System.out.println("Popped: " + arr[top--]);
         }
     }
-
     public void peek() {
         if (isEmpty()) {
             System.out.println("Stack is empty.");
@@ -28,7 +24,6 @@ class IntStack {
             System.out.println("Top element: " + arr[top]);
         }
     }
-
     public void display() {
         if (isEmpty()) {
             System.out.println("Stack is empty.");
@@ -39,16 +34,13 @@ class IntStack {
             System.out.println();
         }
     }
-
     public boolean isEmpty() {
         return top == -1;
     }
-
     public boolean isFull() {
         return top == 9;
     }
 }
-
 public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -63,7 +55,6 @@ public class main {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
-
             switch (choice) {
                 case 1:
                     System.out.print("Enter integer to push: ");
